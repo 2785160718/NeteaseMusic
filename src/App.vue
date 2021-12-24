@@ -1,26 +1,33 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <router-view/>
+  <PlayController/>
+  <Loading/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import PlayController from '@/components/playController'
+import Loading from '@/components/loading'
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  components:{
+    PlayController,Loading
   }
+ 
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: '微软雅黑';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  /* margin-top: 60px; */
+  
+}
+.iconfont{
+  font-size: .45rem;
 }
 </style>
